@@ -17,6 +17,12 @@ class AsteroidBig < Chingu::GameObject
     super
     self.angle += rotation_speed
   end
+
+  def destroy
+    super
+
+    Gosu::Sound["explode.wav"].play
+  end
 end
 
 class AsteroidSmall < AsteroidBig

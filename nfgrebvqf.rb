@@ -11,9 +11,7 @@ require 'bullet'
 require 'asteroids'
 
 # NOTE
-# - bullet death timer
-# - acceleration/decel
-# - multiply thrust angles
+# - bullet repeat
 # - game states
 # - high scores
 # - lives
@@ -25,9 +23,7 @@ class Game < Chingu::Window
     super
     self.input = {:esc => :exit}
 
-    # NOTE timer trait for fire spam?
     @player = PlayerShip.create
-    @player.input = {:holding_left => :turn_left, :holding_right => :turn_right, :space => :fire, :up => :engines_on, :holding_up => :engines_thrusting, :released_up => :engines_off}
     10.times{ AsteroidBig.create }
   end
 
@@ -37,8 +33,6 @@ class Game < Chingu::Window
     Bullet.each_collision(AsteroidBig, AsteroidSmall) do |bullet, asteroid|
       bullet.destroy
       asteroid.destroy
-
-      Gosu::Sound["explode.wav"].play
 
       if asteroid.instance_of? AsteroidBig
 	2.times{ AsteroidSmall.create :x => asteroid.x, :y => asteroid.y }

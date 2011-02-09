@@ -11,6 +11,7 @@ class PlayerShip < Chingu::GameObject
   def initialize(options={})
     super options.merge(:x => $window.width/2, :y => $window.height/2, :image => Gosu::Image["ship.png"])
     self.zorder = 2
+    self.input = {:holding_left => :turn_left, :holding_right => :turn_right, :space => :fire, :up => :engines_on, :holding_up => :engines_thrusting, :released_up => :engines_off}
   end
 
   def turn_left
