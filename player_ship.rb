@@ -28,8 +28,9 @@ class PlayerShip < Chingu::GameObject
   end
 
   def bullet_velocity
-    # TODO get length of current velocity vector
-    return vector(3 + velocity_x.abs)
+    # TODO vector math, bullet should want to go facing + velocity 3
+    # with a bonus or subtraction from your own velocity
+    return vector(3 + velocity_magnitude)
   end
 
   def engines_on

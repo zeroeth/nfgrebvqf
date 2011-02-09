@@ -20,6 +20,10 @@ module Chingu
 	radians = ajusted_angle * Math::PI/180.0
 	return Math::cos(radians)*magnitude, Math::sin(radians)*magnitude
       end
+
+      def velocity_magnitude
+	Math::sqrt(velocity_x**2 + velocity_y**2)
+      end
     end
   end
 end
