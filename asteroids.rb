@@ -30,3 +30,9 @@ class AsteroidSmall < AsteroidBig
     super({:image => Gosu::Image["asteroid_small.png"]}.merge(options))
   end
 end
+
+class AsteroidTiny < AsteroidBig
+  def initialize(options={})
+    super({:image => Gosu::Image["asteroid_tiny.png"]}.merge(options))
+  end
+end

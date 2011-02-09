@@ -28,9 +28,11 @@ class PlayerShip < Chingu::GameObject
   end
 
   def bullet_velocity
-    # TODO vector math, bullet should want to go facing + velocity 3
-    # with a bonus or subtraction from your own velocity
-    return vector(3 + velocity_magnitude)
+    # TODO move into vector trait
+    bullet_x, bullet_y = vector(3) # wants to leave muzzle at velocity of 3
+    ship_x, ship_y = velocity # ships current speed
+
+    return (bullet_x + ship_x), (bullet_y + ship_y)
   end
 
   def engines_on

@@ -12,6 +12,8 @@ require 'asteroids'
 
 # NOTE
 # - bullet repeat
+# - energy?
+# - accuracy
 # - game states
 # - high scores
 # - lives
@@ -30,12 +32,18 @@ class Game < Chingu::Window
   def update
     super
 
-    Bullet.each_collision(AsteroidBig, AsteroidSmall) do |bullet, asteroid|
+    Bullet.each_collision(AsteroidBig, AsteroidSmall, AsteroidTiny) do |bullet, asteroid|
       bullet.destroy
       asteroid.destroy
 
+      # TODO spawn_at helper
       if asteroid.instance_of? AsteroidBig
-	2.times{ AsteroidSmall.create :x => asteroid.x, :y => asteroid.y }
+	(rand(2)+1).times{ AsteroidSmall.create :x => asteroid.x, :y => asteroid.y }
+	rand(2).times{ AsteroidTiny.create :x => asteroid.x, :y => asteroid.y}
+      end
+
+      if asteroid.instance_of? AsteroidSmall
+	(rand(2)+1).times{ AsteroidTiny.create :x => asteroid.x, :y => asteroid.y}
       end
     end
   end
