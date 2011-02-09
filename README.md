@@ -31,7 +31,8 @@ Usage
     ruby nfgrebvqf.rb
 
 Keys
-*  `esc` to quit
+
+* `esc` to quit
 * `left/right arrow` to turn
 * `up arrow` to thrust
 * `spacebar` to fire
