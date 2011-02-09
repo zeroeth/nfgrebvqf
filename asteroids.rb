@@ -10,6 +10,7 @@ class AsteroidBig < Chingu::GameObject
     super({:x => rand($window.width), :y => rand($window.width), :angle => rand(360), :image => Gosu::Image["asteroid_big.png"]}.merge(options))
     self.velocity = vector(rand)
     self.rotation_speed = rand * 2
+    self.zorder = 3
   end
 
   def update

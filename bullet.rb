@@ -9,6 +9,7 @@ class Bullet < Chingu::GameObject
   def initialize(options={})
     super options.merge(:image => Gosu::Image["bullet.png"])
     after(5000) { self.destroy }  
+    self.zorder = 1
   end
 end
 
