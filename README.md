@@ -30,7 +30,8 @@ Usage
 
     ruby nfgrebvqf.rb
 
-* press `esc` to quit
+Keys
+*  `esc` to quit
 * `left/right arrow` to turn
 * `up arrow` to thrust
 * `spacebar` to fire
@@ -40,6 +41,6 @@ Special Thanks
 --------------
 Sound Effects from thefreesoundproject
 
-Engine - by sleep http://www.freesound.org/samplesViewSingle.php?id=930
-Explosion - by zeuss http://www.freesound.org/samplesViewSingle.php?id=22268
-Blaster - by inferno http://www.freesound.org/samplesViewSingle.php?id=18382
+* Engine - by sleep http://www.freesound.org/samplesViewSingle.php?id=930
+* Explosion - by zeuss http://www.freesound.org/samplesViewSingle.php?id=22268
+* Blaster - by inferno http://www.freesound.org/samplesViewSingle.php?id=18382
