@@ -10,9 +10,15 @@ require 'player_ship'
 require 'bullet'
 require 'asteroids'
 
+# TODO
+# - a vector.. or discrete physics trait?
+#   * velocity/acceleration for angle
+#   * propel/repel other objects velocity/acceleration
+#   * helpers for angle_to.. objects/mouse/center
 # NOTE
-# - bullet repeat
-# - energy?
+# - bullet repeat / charge beam
+# - other weapons.. laser (ray through multiple items), seeking missiles
+# - energy? (some kind of trade off for firing/shields)
 # - accuracy
 # - game states
 # - high scores
