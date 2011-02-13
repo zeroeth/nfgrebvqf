@@ -1,0 +1,129 @@
+--- 
+- PlayerShip: 
+    :zorder: 2
+    :angle: 42
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+    :x: 400
+    :y: 300
+- AsteroidTiny: 
+    :zorder: 3
+    :angle: 10
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 232.0
+    :y: 280.0
+- AsteroidSmall: 
+    :zorder: 3
+    :angle: 133
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 280.0
+    :y: 144.0
+- AsteroidBig: 
+    :zorder: 3
+    :angle: 237
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 512.0
+    :y: 48.0
+- AsteroidBig: 
+    :zorder: 3
+    :angle: 178
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 544.0
+    :y: 224.0
+- AsteroidBig: 
+    :zorder: 3
+    :angle: 210
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 496.0
+    :y: 400.0
+- AsteroidSmall: 
+    :zorder: 3
+    :angle: 166
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 40.0
+    :y: 480.0
+- AsteroidSmall: 
+    :zorder: 3
+    :angle: 118
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 208.0
+    :y: 432.0
+- AsteroidBig: 
+    :zorder: 3
+    :angle: 278
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 96.0
+    :y: 168.0
+- AsteroidSmall: 
+    :zorder: 3
+    :angle: 193
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 640.0
+    :y: 376.0
+- AsteroidTiny: 
+    :zorder: 3
+    :angle: 98
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 448.0
+    :y: 104.0
+- AsteroidSmall: 
+    :zorder: 3
+    :angle: 179
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 664.0
+    :y: 144.0
+- AsteroidTiny: 
+    :zorder: 3
+    :angle: 319
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 168.0
+    :y: 40.0
+- AsteroidSmall: 
+    :zorder: 3
+    :angle: 71
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 328.0
+    :y: 448.0
+- AsteroidBig: 
+    :zorder: 3
+    :angle: 271
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 96.0
+    :y: 368.0
+- AsteroidSmall: 
+    :zorder: 3
+    :angle: 49
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+    :x: 672.0
+    :y: 496.0
