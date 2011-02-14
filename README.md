@@ -3,6 +3,8 @@ nfgrebvqf
 
 dont try to pronounce it, just go blow stuff up =)
 
+![nfgrebvqf screenshot](http://github.com/zeroeth/nfgrebvqf/raw/master/screenshot.jpg)
+
 Requirements
 ------------
 
@@ -35,7 +37,10 @@ Keys
 * `esc` to quit
 * `left/right arrow` to turn
 * `up arrow` to thrust
-* `spacebar` to fire
+* `spacebar` to fire (hold to charge)
+* `p` to pause
+* `e` to edit game map
+* `d` for debug information
     
 
 Special Thanks

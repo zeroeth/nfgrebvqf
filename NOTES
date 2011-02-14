@@ -16,6 +16,8 @@
 # - charge beam
 # - other weapon drops, with limited ammo
 
+# - use viewport vs window for bounding bullets and things
+# - draw a map of viewport, with x/y dots of stuff?
 # - client/server, and large viewport worlds (subspace style)
 # - show ways to make horiz/vertical scroll shooters from same code
 # - parlax for topdown (diff levels of stars), horiz landscape, vert landscape
