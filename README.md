@@ -3,7 +3,7 @@ nfgrebvqf
 
 dont try to pronounce it, just go blow stuff up =)
 
-![nfgrebvqf screenshot](http://github.com/zeroeth/nfgrebvqf/raw/master/screenshot.jpg)
+![nfgrebvqf screenshot](https://github.com/zeroeth/nfgrebvqf/raw/master/screenshot.jpg)
 
 Requirements
 ------------
