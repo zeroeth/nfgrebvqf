@@ -1,6 +1,6 @@
 require 'chingu'
 
-class AsteroidBig < Chingu::GameObject
+class Asteroid < Chingu::GameObject
   traits :bounding_circle, :collision_detection
   traits :velocity, :screen_warp, :vector
   # score trait (give and receive)
@@ -15,7 +15,6 @@ class AsteroidBig < Chingu::GameObject
     self.zorder = 3
     self.score = 100
   end
-
   def update
     super
     self.angle += rotation_speed
@@ -28,14 +27,21 @@ class AsteroidBig < Chingu::GameObject
   end
 end
 
-class AsteroidSmall < AsteroidBig
+class AsteroidBig < Asteroid 
+  def initialize(options={})
+    super({:image => Gosu::Image["asteroid_big.png"]}.merge(options))
+    self.score = 100
+  end
+end
+
+class AsteroidSmall < Asteroid
   def initialize(options={})
     super({:image => Gosu::Image["asteroid_small.png"]}.merge(options))
     self.score = 50
   end
 end
 
-class AsteroidTiny < AsteroidBig
+class AsteroidTiny < Asteroid
   def initialize(options={})
     super({:image => Gosu::Image["asteroid_tiny.png"]}.merge(options))
     self.score = 10

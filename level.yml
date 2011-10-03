@@ -1,129 +1,137 @@
---- 
-- PlayerShip: 
-    :zorder: 2
+---
+- PlayerShip:
+    :x: 400
+    :y: 300
     :angle: 42
+    :zorder: 2
     :factor_x: 1.0
     :factor_y: 1.0
     :alpha: 255
-    :x: 400
-    :y: 300
-- AsteroidTiny: 
+- AsteroidTiny:
+    :x: 649.2181093331124
+    :y: 274.07171369415624
+    :angle: 281.64654511556205
     :zorder: 3
-    :angle: 10
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 232.0
-    :y: 280.0
-- AsteroidSmall: 
+- AsteroidSmall:
+    :x: 59.20766032109499
+    :y: 599.8222458153571
+    :angle: 99.00416286920286
     :zorder: 3
-    :angle: 133
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 280.0
-    :y: 144.0
-- AsteroidBig: 
+- AsteroidBig:
+    :x: 231.20360959095268
+    :y: 296.4538410382113
+    :angle: 27.21815057861319
     :zorder: 3
-    :angle: 237
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 512.0
-    :y: 48.0
-- AsteroidBig: 
+- AsteroidBig:
+    :x: 531.1030610158705
+    :y: 563.7213307637737
+    :angle: 337.3270627871728
     :zorder: 3
-    :angle: 178
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 544.0
-    :y: 224.0
-- AsteroidBig: 
+- AsteroidBig:
+    :x: 588.4760265390639
+    :y: 337.4885350022439
+    :angle: 33.04977239247927
     :zorder: 3
-    :angle: 210
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 496.0
-    :y: 400.0
-- AsteroidSmall: 
+- AsteroidSmall:
+    :x: 671.5456937366541
+    :y: 232.86295458254966
+    :angle: 272.1930989517843
     :zorder: 3
-    :angle: 166
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 40.0
-    :y: 480.0
-- AsteroidSmall: 
+- AsteroidSmall:
+    :x: 42.50509111644355
+    :y: 259.8635430099205
+    :angle: 271.9682966718334
     :zorder: 3
-    :angle: 118
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 208.0
-    :y: 432.0
-- AsteroidBig: 
+- AsteroidSmall:
+    :x: 152.0
+    :y: 200.0
+    :angle: 98.3141556493603
+    :zorder: 2
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- AsteroidTiny:
+    :x: 361.8275829432588
+    :y: 175.53278270569172
+    :angle: 26.334669684374596
     :zorder: 3
-    :angle: 278
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 96.0
-    :y: 168.0
-- AsteroidSmall: 
+- AsteroidSmall:
+    :x: 243.56285705463574
+    :y: 31.932919097614306
+    :angle: 223.72736368442716
     :zorder: 3
-    :angle: 193
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 640.0
-    :y: 376.0
-- AsteroidTiny: 
+- AsteroidTiny:
+    :x: 212.7575006398666
+    :y: 125.1559965184407
+    :angle: 210.62964613579862
     :zorder: 3
-    :angle: 98
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 448.0
-    :y: 104.0
-- AsteroidSmall: 
+- AsteroidSmall:
+    :x: 158.70596618198417
+    :y: 343.8862940417508
+    :angle: 288.07305796760494
     :zorder: 3
-    :angle: 179
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 664.0
-    :y: 144.0
-- AsteroidTiny: 
+- AsteroidBig:
+    :x: 674.5792320006925
+    :y: 441.4356400058151
+    :angle: 222.9650476410593
     :zorder: 3
-    :angle: 319
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 168.0
-    :y: 40.0
-- AsteroidSmall: 
+- AsteroidSmall:
+    :x: 396.77610873203656
+    :y: 437.70285139770857
+    :angle: 288.6725088309424
     :zorder: 3
-    :angle: 71
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 328.0
-    :y: 448.0
-- AsteroidBig: 
+- AsteroidBig:
+    :x: 482.4729240681449
+    :y: 200.9000707524047
+    :angle: 112.27143731507087
     :zorder: 3
-    :angle: 271
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 96.0
-    :y: 368.0
-- AsteroidSmall: 
+- AsteroidSmall:
+    :x: 181.16886007680583
+    :y: 484.95027055597683
+    :angle: 330.73606447468484
     :zorder: 3
-    :angle: 49
-    :factor_x: 1
-    :factor_y: 1
+    :factor_x: 1.0
+    :factor_y: 1.0
     :alpha: 255
-    :x: 672.0
-    :y: 496.0

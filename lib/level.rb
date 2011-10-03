@@ -10,6 +10,7 @@ class Level < Chingu::GameState
     super
     self.input = {:esc => :exit, :p => :pause, :e => :edit, :d => :debug}
 
+    @lives = 3
     @score = 0
     @score_text = Chingu::Text.create(:x => 1, :y => 1, :size => 20)
 
@@ -30,6 +31,19 @@ class Level < Chingu::GameState
 
   def update
     super
+
+    PlayerShip.each_collision(AsteroidBig, AsteroidSmall, AsteroidTiny) do |player, asteroid|
+      player.destroy
+      @lives -= 1
+
+      if @lives > 0
+	PlayerShip.create
+      else
+	# TODO this might happen conccurently? 3 collisions in 1 frame?
+	push_game_state(Chingu::GameStates::Pause)
+      end
+
+    end
 
     Bullet.each_collision(AsteroidBig, AsteroidSmall, AsteroidTiny) do |bullet, asteroid|
       bullet.destroy

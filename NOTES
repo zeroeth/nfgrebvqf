@@ -3,6 +3,8 @@
 #   * velocity/acceleration for angle
 #   * propel/repel other objects velocity/acceleration
 #   * helpers for angle_to.. objects/mouse/center
+# - auto load image asset (static)
+#   * or also animations.. based on the images listed (or the actions defined like moving_forward)
 # - confirmation popup state
 # - in game ruby debug console
 # NOTE game features
