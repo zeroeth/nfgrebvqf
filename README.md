@@ -18,9 +18,9 @@ Make sure your system is set up for running Gosu
 
 ### Gosu
 
-* http://code.google.com/p/gosu/wiki/GettingStartedOnLinux
-* http://code.google.com/p/gosu/wiki/GettingStartedOnOsx
-* http://code.google.com/p/gosu/wiki/GettingStartedOnWindows
+* https://github.com/jlnr/gosu/wiki/Getting-Started-on-Windows
+* https://github.com/jlnr/gosu/wiki/Getting-Started-on-OS-X
+* https://github.com/jlnr/gosu/wiki/Getting-Started-on-Linux
 
 ### nfgrebvqf
 
