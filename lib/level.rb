@@ -1,5 +1,4 @@
 require 'chingu'
-require 'score'
 require 'player_ship'
 require 'bullet'
 require 'asteroids'
@@ -8,11 +7,12 @@ include Gosu
 class Level < Chingu::GameState
   def initialize
     super
-    self.input = {:esc => :exit, :p => :pause, :e => :edit, :d => :debug}
+    self.input = {:esc => :close, :p => :pause, :e => :edit, :d => :debug}
 
+    puts "NEW LEVEL"
     @lives = 3
     @score = 0
-    @score_text = Chingu::Text.create(:x => 1, :y => 1, :size => 20)
+    @info_text = Chingu::Text.create(:x => 1, :y => 1, :size => 20)
 
     load_game_objects
   end
@@ -34,13 +34,20 @@ class Level < Chingu::GameState
 
     PlayerShip.each_collision(AsteroidBig, AsteroidSmall, AsteroidTiny) do |player, asteroid|
       player.destroy
+      Gosu::Sound["explode.wav"].play
+
       @lives -= 1
 
       if @lives > 0
-	PlayerShip.create
+        PlayerShip.create
       else
-	# TODO this might happen conccurently? 3 collisions in 1 frame?
-	push_game_state(Chingu::GameStates::Pause)
+        PlayerShip.destroy_all
+        AsteroidBig.destroy_all
+        AsteroidSmall.destroy_all
+        AsteroidTiny.destroy_all
+        scores = Chingu::HighScoreList.load size: 10
+        scores.add name: "player", score: @score
+        close # NOTE pop state seems to cause problems
       end
 
     end
@@ -53,15 +60,15 @@ class Level < Chingu::GameState
 
       # TODO spawn_at helper
       if asteroid.instance_of? AsteroidBig
-	(rand(2)+1).times{ AsteroidSmall.create :x => asteroid.x, :y => asteroid.y }
-	rand(2).times{ AsteroidTiny.create :x => asteroid.x, :y => asteroid.y}
+  (rand(2)+1).times{ AsteroidSmall.create :x => asteroid.x, :y => asteroid.y }
+  rand(2).times{ AsteroidTiny.create :x => asteroid.x, :y => asteroid.y}
       end
 
       if asteroid.instance_of? AsteroidSmall
-	(rand(2)+1).times{ AsteroidTiny.create :x => asteroid.x, :y => asteroid.y}
+  (rand(2)+1).times{ AsteroidTiny.create :x => asteroid.x, :y => asteroid.y}
       end
     end
 
-    @score_text.text = @score
+    @info_text.text = "Score: #{@score} Lives: #{@lives}"
   end
 end

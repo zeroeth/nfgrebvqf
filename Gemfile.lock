@@ -1,20 +1,21 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    chingu (0.8.1)
-      crack
-      gosu (>= 0.7.25)
-      rest-client
-    crack (0.4.1)
-      safe_yaml (~> 0.9.0)
-    gosu (0.7.48)
-    mime-types (1.25)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
-    safe_yaml (0.9.7)
+    chingu (0.9rc9)
+      gosu (>= 0.7.45)
+      gosu (>= 0.7.45)
+    clipboard (0.9.9)
+    ffi (1.0.11)
+    fidgit (0.2.5)
+      chingu (~> 0.9rc7)
+      clipboard (~> 0.9.9)
+      ffi (~> 1.0.11)
+      gosu (~> 0.7.41)
+    gosu (0.7.49)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   chingu
+  fidgit

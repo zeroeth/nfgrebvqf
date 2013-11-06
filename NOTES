@@ -8,15 +8,11 @@
 # - confirmation popup state
 # - in game ruby debug console
 # NOTE game features
-# - bullet repeat / charge beam
 # - other weapons.. laser (ray through multiple items), seeking missiles
 # - energy? (some kind of trade off for firing/shields)
 # - accuracy
-# - game states
-# - high scores
-# - lives
-# - charge beam
-# - other weapon drops, with limited ammo
+# - other weapon drops, with limited ammo or rapid fire
+# - charge beam visibility
 
 # - use viewport vs window for bounding bullets and things
 # - draw a map of viewport, with x/y dots of stuff?

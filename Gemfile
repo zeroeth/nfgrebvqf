@@ -1,2 +1,3 @@
-source "http://rubygems.org"
-gem "chingu"
+source 'http://rubygems.org'
+gem 'chingu'
+gem 'fidgit'

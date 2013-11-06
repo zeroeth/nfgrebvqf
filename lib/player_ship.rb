@@ -9,15 +9,24 @@ class PlayerShip < Chingu::GameObject
 
   attr_accessor :engine_glow
   attr_accessor :rotation_speed
+  attr_accessor :alive
 
   def initialize(options={})
     super options.merge(:x => $window.width/2, :y => $window.height/2)#, :image => Gosu::Image["ship.png"])
     self.image = Gosu::Image["ship.png"]
     self.zorder = 2
-    self.input = {:holding_left => :turn_left, :holding_right => :turn_right, :space => :charge_weapon, :released_space => :fire, :up => :engines_on, :holding_up => :engines_thrusting, :released_up => :engines_off}
+    self.input = {:holding_left => :turn_left, :holding_right => :turn_right, :space => :charge_weapon, :released_space => :fire, :holding_up => :engines_thrusting, :released_up => :engines_off}
     # FIXME still needs to be expressed as a delta
     self.rotation_speed = 3
+
+    self.alive = true
   end
+
+  def destroy
+    engine_glow.stop if engine_glow
+    super
+  end
+
 
   def turn_left
     self.angle -= rotation_speed
@@ -52,6 +61,7 @@ class PlayerShip < Chingu::GameObject
   end
 
   def engines_thrusting
+    engines_on
     # TODO use a delta from fps
     self.acceleration = vector(0.1)
   end
