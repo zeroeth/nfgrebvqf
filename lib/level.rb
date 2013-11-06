@@ -5,6 +5,8 @@ require 'asteroids'
 include Gosu
 
 class Level < Chingu::GameState
+  trait :asynchronous
+
   def initialize
     super
     self.input = {:esc => :close, :p => :pause, :e => :edit, :d => :debug}
@@ -29,6 +31,10 @@ class Level < Chingu::GameState
     push_game_state(Chingu::GameStates::Pause)
   end
 
+  def spawn_ship
+    PlayerShip.create
+  end
+
   def update
     super
 
@@ -39,7 +45,10 @@ class Level < Chingu::GameState
       @lives -= 1
 
       if @lives > 0
-        PlayerShip.create
+        self.async do |q|
+          q.wait 1000
+          q.call :spawn_ship
+        end
       else
         PlayerShip.destroy_all
         AsteroidBig.destroy_all

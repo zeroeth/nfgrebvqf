@@ -12,7 +12,9 @@
 # - energy? (some kind of trade off for firing/shields)
 # - accuracy
 # - other weapon drops, with limited ammo or rapid fire
-# - charge beam visibility
+# - charge beam fx
+# - respawn fx (fade/sound), explosion fx
+# - hyperspace
 
 # - use viewport vs window for bounding bullets and things
 # - draw a map of viewport, with x/y dots of stuff?
